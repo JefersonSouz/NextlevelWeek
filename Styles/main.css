@@ -1,5 +1,6 @@
 :root{
   --title-color:#322153;
+  --primary-color: #34cb79;
 }
 
 *{
@@ -12,6 +13,7 @@ html {
 
 body{
     background: #f0f0f5;
+    -webkit-font-smoothing: antialiased
 }
 
 a{
@@ -77,9 +79,56 @@ posicionamnto, alinhamento
 
 #page-home main{
 max-width: 560px;
+
+flex:1;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
 }
 
 #page-home main h1{
     font-size: 54px;
-    color: var(--title-color);
+    
+}
+
+#page-home main p {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;
+}
+
+#page-home main a{
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 40px;
+
+    background-color: var(--primary-color);
+
+    transition: 400ms;
+
+    font-weight: bold;
+    color: white;
+
+
+}
+
+#page-home main a:hover{
+    background-color:#2fb86e ;
+}
+
+#page-home main a span{
+    width: 72px;
+    height: 72px;
+
+    background-color: rgb(0, 0, 0, 0,08);
 }
